@@ -1,0 +1,27 @@
+{
+  "name": "smart-task-planner",
+  "version": "1.0.0",
+  "description": "AI-powered smart task planner that converts goals into actionable tasks using LLM reasoning.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adi1424/smart-task-planner/issues"
+  },
+  "homepage": "https://github.com/adi1424/smart-task-planner#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "groq-sdk": "^0.37.0",
+    "openai": "^6.9.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}

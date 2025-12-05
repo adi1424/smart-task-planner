@@ -1,0 +1,9 @@
+Task: Break this goal into actionable tasks with dependencies and estimated days.
+Output: JSON object with:
+  - goal
+  - tasks: [{ task_id, name, description, depends_on, estimated_days, priority }]
+Rules:
+  - Return ONLY JSON
+  - Keep tasks practical
+  - Make dependencies accurate
+Goal: {{goal}}

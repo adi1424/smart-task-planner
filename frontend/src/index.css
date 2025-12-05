@@ -1,0 +1,46 @@
+/* index.css - Dark premium base + Tailwind directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom utilities to help glass effect */
+:root {
+  --bg-dark-0: #000000;
+  --bg-dark-1: #0b0b0b;
+  --panel: rgba(255,255,255,0.04);
+  --glass-border: rgba(255,255,255,0.06);
+  --neon: #3b82f6; /* electric blue */
+  --neon-glow: rgba(59,130,246,0.14);
+}
+
+/* Page gradient background */
+body {
+  background: radial-gradient(circle at 10% 10%, rgba(255,255,255,0.02), transparent 10%),
+              linear-gradient(180deg, var(--bg-dark-1), var(--bg-dark-0));
+  color: #e6eef8;
+}
+
+/* Glass card base */
+.glass {
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0.03),
+    rgba(255,255,255,0.02)
+  );
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(8px);
+}
+
+/* Neon button */
+.btn-neon {
+  background: linear-gradient(90deg, var(--neon), #2563eb);
+  box-shadow: 0 6px 20px var(--neon-glow);
+}
+.btn-neon-soft {
+  background: rgba(59,130,246,0.08);
+  border: 1px solid rgba(59,130,246,0.18);
+  color: var(--neon);
+}
+
+/* small helper */
+.text-dim { color: #9aa6b2; }
